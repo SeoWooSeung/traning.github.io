@@ -1,0 +1,45 @@
+.box {
+    width: 1000px;
+    height: 100px;
+    background: #f00;
+    /* magin px는 상우하좌 적용 */
+    margin: 100px;
+}
+
+.box01 {
+    background: #ff0;
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.box02 {
+    background: #00f;
+    width: 800px;
+    height: 200px;
+    margin: 0 0 0 auto;
+}
+
+/* inline 속성을 가진 태그는 size를 줄 수 없고 좌우 magin,
+padding 만 적용 다만, backgrund가 있을 경우 backgrund를 보이게하지만
+공간을 차지하지 않는다. */
+.inline01 {
+    margin: 100px;
+    padding: 100px;
+}
+
+.block {
+    display: block;
+}
+
+.size {
+    border: 10px solid #00f;
+    width: 500px;
+    height: 100px;
+    margin: 50px;
+    padding: 100px;
+}
+
+.size01 {
+    box-sizing: border-box;
+}

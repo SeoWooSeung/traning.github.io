@@ -1,0 +1,71 @@
+.main_content {
+    padding: 120px 0;
+    background: #f9f9f9;
+}
+
+.main_content h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.main_content p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+
+.main_content .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_content .inner .figure {
+    flex: 1;
+}
+
+.main_content .img_box {
+    margin: 0 0 40px 0;
+    overflow: hidden;
+}
+
+/* overflow: hidden; - 부드러운 이미지 */
+
+.main_content .img_box img {
+    transition: 0.5s;
+}
+
+/*  transition: 0.5s; -  켜지는 속도*/
+
+.main_content .img_box:hover img {
+    transform: scale(1.1);
+}
+
+.main_content .inner strong {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 14px 0;
+    text-align: center;
+}
+
+.main_content .inner strong::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 2px;
+    height: 40px;
+    background: rgb(69, 143, 0);
+}
+
+
+.main_content .inner span {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+}

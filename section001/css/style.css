@@ -1,0 +1,63 @@
+/* tag 선택자 */
+div {
+    background-color: #f00;
+    color: #fff;
+    width: 50%;
+}
+
+/* div:nth-child(2) {
+    background-color: #ff0;
+} */
+
+/* id 선택자
+: tag 선택자 보다 우선한다. 
+: 한 html 문서에서 id 선택자는 중복사용 할수없다.
+: 명확한 선택을 할 수 있다. 
+*/
+
+#a01 {
+    background-color: #ff0;
+}
+
+div {
+    background-color: #00f;
+}
+
+/* calss 선택자
+:tag 선택자 보다 우선한다.
+; 한 html 문서에서 중복 사용 할 수 있다. */
+.a01 {
+    background-color: #0f0;
+}
+
+div {
+    background-color: #00f;
+}
+
+/* div {
+    background-color: #00f !important
+} */
+
+/* !important > id(100) > class(10) > tag(1) */
+.inner {
+    background-color: #f00;
+}
+
+/* 후손 선택자 A B */
+#sec01 .inner {
+    background-color: #ff0;
+}
+
+/* 자식 선택자 A>B */
+#sec01>.inner {
+    background-color: #369;
+    color: #fff;
+}
+
+.inner {
+    background-color: #000;
+}
+
+#sec01 p {
+    color: #f00;
+}
