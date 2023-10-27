@@ -1,0 +1,263 @@
+.inner {
+    /* 1200px 가이드를 가진 박스 가운데 오게 해서 라인을 맞춤 */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 반응형의 기초 작업 이자 그리드 시스템 디자인 가이드 만들기 */
+    padding: 0 15px;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.title p {
+    font-size: 14px;
+}
+
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    /* 가로배치 */
+    gap: 60px;
+    /* 네비 간격 띄우기 */
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 2px;
+    height: 12px;
+    /* 폰트크기가 16 으로 맞춰져서 보다 작아야함 */
+    background: #666;
+    transform: translate(-50%, -50%);
+}
+
+/*.mainVisual {/
+    background: url(../imges/mainvisual01.jpg) no-repeat center center/cover;
+    height: 700px;
+}*/
+
+.mainSlide .itm01 {
+    height: 700px;
+    background: url(../imges/mainvisual01.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .itm02 {
+    height: 700px;
+    background: url(../imges/mainvisual02.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .itm03 {
+    height: 700px;
+    background: url(../imges/mainvisual03.jpg)no-repeat center center/cover;
+}
+
+.mainSlide .itm {
+    position: relative;
+}
+
+.mainSlide .slogen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mainSlide .slogen strong {
+    display: block;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 24px 0;
+    /*상 우 좌 하*/
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.mainVisual {
+    position: relative;
+}
+
+
+.mainSlide .slogen p {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.mainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+.mainVisual .arrows i {
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 #000;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+
+.mainVisual .arrows .left {
+    left: 0;
+}
+
+.mainVisual .arrows .right {
+    right: 0;
+}
+
+/*.mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+}
+
+.mainSlide .slick-dots>li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.mainSlide .slick-dots>li button {
+    width: 20px;
+    height: 20px;
+    background: rgb(231, 137, 120);
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+}
+
+.mainSlide .slick-dots>li.slick-active button {
+    background: #333;
+}*/
+
+.mainVisual .menu {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mainVisual .menu a {
+    position: relative;
+    display: block;
+    padding: 0 40px 0 0;
+    height: 24px;
+    color: #fff;
+
+}
+
+.mainVisual .menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #333;
+}
+
+.mainVisual .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #ff6347;
+}
+
+.mainVisual .menu li.on a::after {
+    transition: 3s;
+    width: 100%;
+}
+
+.mainVisual .num {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    /*max-width: 1200px;
+    width: 100%;
+    padding: 0, 15px;*/
+
+    margin: 0 0 0 585px;
+
+    transform: translate(-100%, 0);
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+
+    text-shadow: 1px 1px 0 #000;
+}
+
+/*text-align: right;*/
+
+.mainEvent {
+    padding: 120px 0;
+}
+
+.mainEvent .content {
+    display: flex;
+    gap: 30px;
+}
+
+.mainEvent .content figure {
+    flex: 1;
+}
+
+.mainEvent .content .img_box {
+    margin: 0 0 24px 0;
+}
+
+.mainEvent .content strong {
+    display: block;
+    margin: 0 0 14px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mainEvent .content p {
+    line-height: 20px;
+    word-break: keep-all;
+}

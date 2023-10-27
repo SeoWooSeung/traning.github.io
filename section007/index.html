@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graff 기본 홈페이지 만들기</title>
+    <!-- ●css 가져오는 순서●
+    1. reaset
+    2.나머지들
+    3.내가 적용할 style
+    -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- ●JS 가져오는 순서●
+    1. jquery
+    2. plug-in
+    3. 내가 적용할 javascript   
+    -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/cstom.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header class="header">
+            <div class="inner">
+                <h1>
+                    <a href="/">
+                        <img src="./imges/grafflogo.png" alt="graff">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="">하이주얼리 </a></li>
+                        <li><a href="">주얼리 컬렉션</a></li>
+                        <li><a href=""> 컬렉션 &amp; 브라이덜</a></li>
+                        <li><a href="">웨딩주얼리</a></li>
+                        <li><a href="">특별한 솔리테어</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+        </header>
+
+        <main class="main">
+            <section class="mainVisual">
+                <div class="mainSlide">
+
+                    <div class="itm itm01">
+                        <div class="slogen">
+                            <strong>01.JEWELLERY COLLECTION EVENT</strong>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="itm itm02">
+                        <div class="slogen">
+                            <strong>02.JEWELLERY COLLECTION EVENT</strong>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="itm itm03">
+                        <div class="slogen">
+                            <strong>03.JEWELLERY COLLECTION EVENT</strong>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <i class="xi-arrow-left left"></i>
+                    <i class="xi-arrow-right right"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="">첫번째 내용</a></li>
+                    <li><a href="">두번째 내용</a></li>
+                    <li><a href="">세번째 내용</a></li>
+                </ul>
+                <div class="num">
+                    <strong>1</strong>
+                    /
+                    <span>3</span>
+                </div>
+            </section>
+            <section class="mainEvent">
+                <div class="title">
+                    <h2>JEWELLERY COLLECTION EVENT</h2>
+                    <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다. </p>
+                </div>
+                <div class="inner content">
+                    <figure>
+                        <div class="img_box">
+                            <img src="./imges/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>강철의 영약</strong>
+                        <p>★ 사용 시 - 소모: 3분 동안 체력이 300, 강인함이 25% 증가하고, 챔피언이 거대해집니다. 이 효과가 활성화된 동안 이동하면 길이 생겨 그 위의 아군
+                            챔피언들은 이동 속도가 15% 상승합니다.</p>
+                    </figure>
+                    <figure>
+                        <div class="img_box">
+                            <img src="./imges/lesedilarona02.jpg" alt="">
+                        </div>
+                        <strong> 마법의 영약</strong>
+                        <p>★ 사용 시 - 소모: 3분 동안 주문력이 50, 마나 재생력이 15% 증가합니다. 활성화된 동안 챔피언이나 포탑에 피해를 입히면 25의 추가 고정 피해를 입힙니다.
+                            5초 </p>
+                    </figure>
+                    <figure>
+                        <div class="img_box">
+                            <img src="./imges/lesedilarona03.jpg" alt="">
+                        </div>
+                        <strong>강철의 영약</strong>
+                        <p>★ 사용 시 - 소모: 3분 동안 체력이 300, 강인함이 25% 증가하고, 챔피언이 거대해집니다. 이 효과가 활성화된 동안 이동하면 길이 생겨 그 위의 아군
+                            챔피언들은 이동 속도가 15% 상승합니다.</p>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>
